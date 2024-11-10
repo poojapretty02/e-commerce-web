@@ -1,0 +1,1130 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", serif;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+img {
+  object-fit: contain;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+nav ul {
+  list-style: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:hover {
+  color: rgb(112, 112, 249);
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.offer i {
+  font-size: 20px;
+  padding: 10px;
+}
+.offer {
+  position: relative;
+}
+.airforce {
+  background-color: rgb(6, 6, 6);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding-top: 20px;
+}
+.circle {
+  background-color: rgb(94, 209, 255);
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+}
+.airforce h1 {
+  color: white;
+  font-weight: bold;
+  align-self: flex-start;
+  padding-top: 145px;
+  padding-left: 50px;
+}
+.airforce img {
+  width: 600px;
+  height: 500px;
+}
+.btn {
+  font-size: 20px;
+  background-color: black;
+  padding: 10px 40px;
+  border: white solid 1px;
+}
+
+#select-page {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+#air-force,
+#airmaxx,
+#jorden,
+#crater {
+  width: 400px;
+  height: 400px;
+}
+.related-img {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+.related-img img {
+  width: 100px;
+  height: 100px;
+}
+.para {
+  width: 370px;
+}
+#airforce-img,
+#airforce {
+  width: 100px;
+  height: 100px;
+}
+.content-page {
+  padding-left: 200px;
+}
+.price {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0;
+}
+#card {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  position: relative;
+}
+#cartSection {
+  position: fixed;
+  right: 28px;
+  top: 61px;
+  width: 300px;
+  background: rgb(244, 244, 244);
+  padding: 20px;
+  border: 1px solid rgb(51, 51, 51);
+  display: block;
+  z-index: 6;
+}
+#card1,
+#card2,
+#card3 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  position: relative;
+  padding-top: 50px;
+}
+
+#showCardButton,
+#closeCardButton,
+#closeButton,
+#showButton,
+#showjordenButton,
+#closejordenButton,
+#showcraterButton,
+#closecraterButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#closeCardButton,
+#closeButton,
+#closejordenButton,
+#closecraterButton {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+.plus,
+.plus-sym,
+.plus-sym1,
+.plus-sym2 {
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.num,
+.numb,
+.numb1,
+.numb2 {
+  font-size: 20px;
+}
+.minus,
+.minus-sym,
+.minus-sym1,
+.minus-sym2 {
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.quantity {
+  border: black solid 1px;
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.add-cart {
+  padding: 10px;
+}
+.add-cart-btn {
+  padding-top: 20px;
+}
+.text-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.text-desc {
+  width: 130px;
+  height: 100px;
+  text-align: center;
+  font-size: 15px;
+}
+.cart-count {
+  position: absolute;
+  top: -3px;
+  right: 0px;
+  background-color: rgb(94, 209, 255);
+  color: rgb(11, 10, 10);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+#clickto-hide {
+  color: rgb(250, 249, 249);
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 400;
+  background-color: red;
+  width: 60px;
+  height: 10px;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+}
+i {
+  padding: 50px 0px 15px 40px;
+}
+.content i {
+  font-size: 48px;
+  color: rgb(94, 209, 255);
+  cursor: pointer;
+}
+.air-max {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  background-color: rgb(239, 239, 239);
+  padding-bottom: 100px;
+}
+
+.full-info {
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+  touch-action: pan-x pan-y;
+}
+.full-info::-webkit-scrollbar {
+  display: none;
+}
+.full-info img {
+  width: 500px;
+  height: 600px;
+  padding-top: 100px;
+}
+#backButton,
+#rightButton {
+  width: 200px;
+  height: 200px;
+  justify-self: center;
+  align-self: center;
+}
+.details h1,
+.paragraph {
+  padding: 150px 0 20px 50px;
+}
+.rate {
+  padding-left: 50px;
+  font-size: 20px;
+}
+.paragraph {
+  padding-top: 20px;
+  font-size: 20px;
+  width: 400px;
+}
+.air-max::-webkit-scrollbar {
+  display: none;
+}
+.full-info img {
+  width: 500px;
+  height: 600px;
+  padding-top: 100px;
+}
+#backButton,
+#rightButton {
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+}
+.details h1,
+.paragraph {
+  padding: 150px 0 20px 50px;
+}
+.rate {
+  padding-left: 50px;
+  font-size: 20px;
+}
+.paragraph {
+  padding-top: 20px;
+  font-size: 20px;
+  width: 400px;
+}
+.colour1 {
+  background-color: burlywood;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+.clr {
+  padding-left: 50px;
+  display: flex;
+  padding-top: 20px;
+}
+.colour2 {
+  background-color: black;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+.space {
+  padding-left: 20px;
+}
+.button {
+  padding-left: 50px;
+  color: white;
+}
+.buy-button {
+  font-size: 20px;
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  height: 45px;
+}
+.shoe-sizes {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+}
+.size,
+.size1,
+.size2,
+.size3 {
+  border: black solid 1px;
+  padding: 10px;
+  color: rgb(6, 6, 6);
+}
+.shoe-sizes a {
+  text-decoration: none;
+}
+.shoe-sizes a:hover {
+  background-color: rgb(94, 209, 255);
+}
+.shoe-sizes a:focus {
+  background-color: rgb(94, 209, 255);
+}
+.shoe-demo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.shoe-demo img {
+  width: 300px;
+  height: 400px;
+}
+.pose {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 300px;
+}
+#pose1 {
+  padding-top: 120px;
+}
+.pose2 {
+  align-self: flex-start;
+  padding-top: 30px;
+}
+.pose3 {
+  align-self: flex-end;
+}
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer p {
+  text-align: center;
+}
+.new-arrival {
+  font-size: 20px;
+  padding: 10px;
+}
+.new-season {
+  font-size: 25px;
+  padding: 10px;
+}
+.new-collection {
+  font-size: 30px;
+  padding: 10px;
+}
+.footer a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choose p {
+  background-color: rgb(250, 247, 247);
+  width: 200px;
+  padding: 10px;
+  color: black;
+}
+.footer img {
+  height: 300px;
+  width: 240px;
+}
+.company-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 50px 35px 50px;
+}
+.company-details li {
+  list-style: none;
+}
+.subscribe-text {
+  font-weight: bold;
+  padding: 0 0 10px 0;
+  font-size: 20px;
+}
+.subscribe i {
+  padding: 18px 18px 0 0;
+}
+.subscribe input,
+.subscribe button {
+  padding: 7px;
+  font-size: 14px;
+}
+.follow {
+  padding: 15px 0;
+  font-size: 18px;
+}
+.about-us li {
+  padding: 5px;
+  font-size: 18px;
+}
+.cartitems {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-between;
+}
+.buy-now-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buy-now-button:hover {
+  background-color: #218838;
+}
+#payment-page {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+.overall-payment-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#payment-page p {
+  padding: 3px;
+}
+
+.payment-text1 {
+  padding-left: 10px;
+  text-align: center;
+}
+.payment-text2 {
+  padding: 10px;
+  text-align: center;
+}
+#payment-page input {
+  height: 25px;
+  width: 250px;
+  padding: 18px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(227, 222, 222);
+  color: white;
+}
+#paymentpage-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(11, 10, 10);
+  padding: 5px;
+}
+.payment-details {
+  padding: 10px;
+  border: #060506 solid 2px;
+  box-shadow: 8px 8px;
+  height: 450px;
+  width: 300px;
+}
+
+.place-order {
+  color: black;
+  background-color: rgb(250, 250, 252);
+  padding: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.place-order-button {
+  text-align: center;
+  padding: 10px;
+}
+.place-order:hover {
+  background-color: rgb(110, 109, 116);
+}
+#ordered-confirmed {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.order-text i {
+  font-size: 200px;
+  color: #0e0e0f;
+  padding-right: 25px;
+}
+#ordered-confirmed h1 {
+  background-color: #28a745;
+  border-radius: 50%;
+  width: 188px;
+  height: 188px;
+}
+#ordered-confirmed p {
+  color: #060506;
+  font-size: 20px;
+  padding: 20px;
+}
+.order-texted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.continue-shopping {
+  color: white;
+  background-color: #080808;
+  padding: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  .content-page {
+    padding-left: 184px;
+  }
+  #air-force,
+  #airmaxx,
+  #jorden,
+  #crater {
+    width: 258px;
+    height: 327px;
+  }
+  .full-info img {
+    width: 292px;
+    height: 501px;
+  }
+  .full-info {
+    width: 604px;
+  }
+  .paragraph {
+    width: 296px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 850px) {
+  #header {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .circle {
+    width: 435px;
+    height: 449px;
+  }
+  .airforce img {
+    width: 443px;
+    height: 375px;
+  }
+  .airforce {
+    height: 100%;
+    padding-bottom: 100px;
+  }
+  .airforce h1 {
+    padding-top: 120px;
+    padding-left: 50px;
+  }
+  .content-page {
+    padding-left: 86px;
+  }
+  #air-force,
+  #airmaxx,
+  #jorden,
+  #crater {
+    width: 232px;
+    height: 292px;
+  }
+  #pose1 img,
+  .pose2 img,
+  .pose3 img {
+    width: 238px;
+    height: 300px;
+    padding: 10px;
+  }
+  .shoe-demo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .shoe-demo p {
+    font-size: 20px;
+  }
+  .pose {
+    width: 234px;
+  }
+  /* .subscribe-text {
+    font-weight: bold;
+    padding: 0 0 10px 0;
+    font-size: 25px;
+  }
+  .subscribe i {
+    padding: 18px 18px 0 0;
+  }
+  .subscribe input,
+  .subscribe button {
+    padding: 7px;
+    font-size: 14px;
+  }
+  .follow {
+    padding: 15px 0;
+    font-size: 18px;
+  } */
+  .about-us li {
+    padding: 5px;
+    font-size: 18px;
+  }
+  .about-us {
+    padding: 0 30px 20px 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  #pose1 img,
+  .pose2 img,
+  .pose3 img {
+    width: 162px;
+    height: 300px;
+    padding: 10px;
+  }
+  .shoe-demo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .shoe-demo p {
+    font-size: 20px;
+  }
+  .pose {
+    width: 154px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #header {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .circle {
+    width: 298px;
+    height: 325px;
+  }
+  .airforce img {
+    width: 305px;
+    height: 262px;
+  }
+  .airforce {
+    height: 100%;
+    padding-bottom: 100px;
+  }
+  .airforce h1 {
+    padding-top: 63px;
+    padding-left: 35px;
+  }
+  .content-page {
+    padding-left: 0px;
+  }
+  #air-force,
+  #airmaxx,
+  #jorden,
+  #crater {
+    width: 200px;
+    height: 250px;
+  }
+  .text-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .text-desc {
+    width: 130px;
+    height: 100px;
+    text-align: center;
+    font-size: 11px;
+  }
+  .content i {
+    font-size: 30px;
+  }
+  .full-info img {
+    width: 292px;
+    height: 501px;
+  }
+  .full-info {
+    width: 604px;
+  }
+  .paragraph {
+    width: 310px;
+    padding-right: 20px;
+  }
+  .footer img {
+    height: 195px;
+    width: 156px;
+  }
+  .subscribe i {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .shoe-color {
+    display: flex;
+    position: relative;
+    top: 266px;
+    right: 546px;
+  }
+  #air-force,
+  #airmaxx,
+  #jorden,
+  #crater {
+    width: 200px;
+    height: 265px;
+    position: relative;
+    right: 355px;
+    bottom: 45px;
+  }
+  .related-img {
+    display: flex;
+    flex-direction: row;
+    padding-top: 280px;
+  }
+  .related-img img {
+    width: 76px;
+    height: 73px;
+  }
+  #airforce-img,
+  #airforce {
+    width: 75px;
+    height: 75px;
+  }
+  .shoe-sizes {
+    position: relative;
+    top: 300px;
+    right: 546px;
+  }
+  .quantity {
+    position: relative;
+    top: 288px;
+    right: 546px;
+  }
+  .price {
+    position: relative;
+    top: 418px;
+    right: 546px;
+  }
+  #productName {
+    position: relative;
+    top: 436px;
+    right: 545px;
+    font-size: 18px;
+  }
+  .add-cart-btn {
+    position: relative;
+    top: 276px;
+    right: 545px;
+  }
+  .add-cart {
+    padding: 10px;
+    font-size: 17px;
+  }
+  .text-title {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .text-desc {
+    width: 103px;
+    height: 100px;
+    text-align: center;
+    font-size: 11px;
+  }
+  .content i {
+    font-size: 30px;
+  }
+  .paragraph {
+    width: 255px;
+    padding-right: 20px;
+  }
+  .full-info img {
+    width: 164px;
+    height: 302px;
+  }
+  .full-info {
+    width: 900px;
+  }
+  .details {
+    padding-right: 100px;
+  }
+  .footer img {
+    height: 175px;
+    width: 141px;
+  }
+  .new-arrival {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .new-season {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .new-collection {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .about-us {
+    font-size: 15px;
+  }
+  .subscribe i {
+    padding: 3px;
+  }
+  .company-details {
+    padding: 20px;
+  }
+  .about-us li {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .subscribe-text {
+    font-size: 12px;
+  }
+  .subscribe input {
+    font-size: 8px;
+    width: 70px;
+  }
+  .subscribe i {
+    font-size: 5px;
+    padding: 2px;
+  }
+  .follow {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .circle {
+    background-color: rgb(94, 209, 255);
+    border-radius: 50%;
+    width: 277px;
+    height: 277px;
+  }
+  .airforce {
+    height: 100vh;
+    display: block;
+    padding-left: 81px;
+    padding-top: 80px;
+  }
+  .airforce h1 {
+    padding-left: 50px;
+  }
+  .airforce img {
+    width: 281px;
+    height: 227px;
+  }
+  .text-title {
+    font-size: 8px;
+    font-weight: bold;
+  }
+  .text-desc {
+    width: 70px;
+    height: 100px;
+    text-align: center;
+    font-size: 11px;
+  }
+  .content i {
+    font-size: 27px;
+    padding: 10px 8px 10px 22px;
+  }
+  #backButton {
+    display: none;
+  }
+  #rightButton {
+    display: none;
+  }
+  .full-info img {
+    object-fit: contain;
+    width: 386px;
+    height: 343px;
+  }
+  .full-info {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    display: block;
+    padding-top: 147px;
+  }
+
+  .details h1,
+  .button {
+    padding-top: 10px;
+  }
+  .rate {
+    padding-top: 10px;
+    font-size: 30px;
+  }
+  .paragraph {
+    padding-top: 20px;
+    font-size: 30px;
+    width: 400px;
+  }
+  #pose1 img,
+  .pose2 img,
+  .pose3 img {
+    width: 133px;
+    height: 300px;
+    padding: 5px;
+  }
+  .shoe-demo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .shoe-demo p {
+    font-size: 10px;
+  }
+  .pose {
+    width: 134px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer img {
+    height: 100%;
+    width: 100%;
+  }
+  .new-arrival {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .new-season {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .new-collection {
+    font-size: 30px;
+    padding: 10px;
+  }
+  .choose {
+    font-size: 20px;
+  }
+  .shoe-img1 {
+    padding-bottom: 10px;
+  }
+  .shoe-img2 {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #header {
+    font-size: 7px;
+    padding: 10px;
+  }
+  .circle {
+    background-color: rgb(94, 209, 255);
+    border-radius: 50%;
+    width: 243px;
+    height: 243px;
+  }
+  .airforce {
+    height: 100vh;
+    display: block;
+    padding-left: 40px;
+    padding-top: 80px;
+  }
+  .airforce h1 {
+    padding-left: 50px;
+  }
+  .airforce img {
+    width: 245px;
+    height: 202px;
+  }
+  .related-img img {
+    width: 64px;
+    height: 64px;
+  }
+  #select-page {
+    padding-left: 0px;
+  }
+  #air-force,
+  #airmaxx,
+  #jorden,
+  #crater {
+    width: 200px;
+    height: 265px;
+    position: relative;
+    right: 309px;
+    bottom: 45px;
+  }
+  .shoe-color {
+    display: flex;
+    position: relative;
+    top: 258px;
+    right: 497px;
+  }
+  .shoe-sizes {
+    position: relative;
+    top: 300px;
+    right: 495px;
+  }
+  .quantity {
+    position: relative;
+    top: 288px;
+    right: 495px;
+  }
+  .price {
+    position: relative;
+    top: 418px;
+    right: 495px;
+  }
+  #productName {
+    position: relative;
+    top: 436px;
+    right: 495px;
+    font-size: 21px;
+  }
+  .add-cart-btn {
+    position: relative;
+    top: 233px;
+    right: 365px;
+  }
+
+  #pose1 img,
+  .pose2 img,
+  .pose3 img {
+    width: 103px;
+    height: 300px;
+    padding: 5px;
+  }
+  .shoe-demo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .shoe-demo p {
+    font-size: 10px;
+  }
+  .pose {
+    width: 79px;
+  }
+  #paymentpage-close {
+    font-size: 20px;
+  }
+}
