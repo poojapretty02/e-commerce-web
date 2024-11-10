@@ -3,20 +3,7 @@ let scrollDownside = document.querySelector(".air-max");
 let backbtn = document.querySelector("#backButton");
 let nextbtn = document.querySelector("#rightButton");
 
-// scrollContainer.addEventListener("wheel", (e) => {
-//   if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
-//     e.preventDefault();
-//     scrollContainer.scrollLeft += e.deltaX;
-//   }
-// });
-// nextbtn.addEventListener("click", () => {
-//   scrollContainer.computedStyleMap.scrollBehavior = "smooth";
-//   scrollContainer.scrollLeft += 900;
-// });
 
-// backbtn.addEventListener("click", () => {
-//   scrollContainer.scrollLeft -= 900;
-// });
 const isMobile = window.innerWidth <= 480;
 
 if (!isMobile) {
@@ -28,7 +15,6 @@ if (!isMobile) {
   });
 }
 
-// Buttons to scroll horizontally only on larger screens
 if (!isMobile) {
   nextbtn.addEventListener("click", () => {
     scrollContainer.computedStyleMap.scrollBehavior = "smooth";
@@ -42,27 +28,27 @@ if (!isMobile) {
 
 function display() {
   var img = document.getElementById("air-force");
-  img.src = "/images/white air-force.png";
+  img.src = "images/white air-force.png";
 }
 function change() {
   var img = document.getElementById("air-force");
-  img.src = "/images/airforce-img.png";
+  img.src = "images/airforce-img.png";
 }
 function change1() {
   var img = document.getElementById("air-force");
-  img.src = "/images/airforce-img.png";
+  img.src = "images/airforce-img.png";
 }
 function change2() {
   var img = document.getElementById("air-force");
-  img.src = "/images/air-force1.png";
+  img.src = "images/air-force1.png";
 }
 function change3() {
   var img = document.getElementById("air-force");
-  img.src = "/images/air-force2.png";
+  img.src = "images/air-force2.png";
 }
 function change4() {
   var img = document.getElementById("air-force");
-  img.src = "/images/air-force3.png";
+  img.src = "images/air-force3.png";
 }
 
 document.getElementById("card").style.display = "none";
@@ -265,27 +251,27 @@ minus.addEventListener("click", function () {
 
 function changed() {
   var img = document.getElementById("airmaxx");
-  img.src = "/images/airmaxx.png";
+  img.src = "images/airmaxx.png";
 }
 function changed1() {
   var img = document.getElementById("airmaxx");
-  img.src = "/images/air-maxgold1.png";
+  img.src = "images/air-maxgold1.png";
 }
 function changed2() {
   var img = document.getElementById("airmaxx");
-  img.src = "/images/air-maxgold2.png";
+  img.src = "images/air-maxgold2.png";
 }
 function changed3() {
   var img = document.getElementById("airmaxx");
-  img.src = "/images/air-maxgold3.png";
+  img.src = "images/air-maxgold3.png";
 }
 function changed4() {
   var img = document.getElementById("airmaxx");
-  img.src = "/images/airmaxx.png";
+  img.src = "images/airmaxx.png";
 }
 function changed5() {
   var img = document.getElementById("airmaxx");
-  img.src = "/images/air-maxgreen.png";
+  img.src = "images/air-maxgreen.png";
 }
 
 function addCart() {
@@ -349,23 +335,23 @@ minus1.addEventListener("click", function () {
 
 function changed11() {
   var img = document.getElementById("jorden");
-  img.src = "/images/jordan.jpeg";
+  img.src = "images/jordan.jpeg";
 }
 function changed12() {
   var img = document.getElementById("jorden");
-  img.src = "/images/jordan1.png";
+  img.src = "images/jordan1.png";
 }
 function changed13() {
   var img = document.getElementById("jorden");
-  img.src = "/images/jordan2.png";
+  img.src = "images/jordan2.png";
 }
 function changed14() {
   var img = document.getElementById("jorden");
-  img.src = "/images/jordan3.png";
+  img.src = "images/jordan3.png";
 }
 function changed15() {
   var img = document.getElementById("jorden");
-  img.src = "/images/jordan.jpeg";
+  img.src = "images/jordan.jpeg";
 }
 
 function addTheCart() {
@@ -429,23 +415,23 @@ minus2.addEventListener("click", function () {
 
 function changed16() {
   var img = document.getElementById("crater");
-  img.src = "/images/crater.png";
+  img.src = "images/crater.png";
 }
 function changed17() {
   var img = document.getElementById("crater");
-  img.src = "/images/crater1.jpeg";
+  img.src = "images/crater1.jpeg";
 }
 function changed18() {
   var img = document.getElementById("crater");
-  img.src = "/images/crater2.png";
+  img.src = "images/crater2.png";
 }
 function changed19() {
   var img = document.getElementById("crater");
-  img.src = "/images/crater3.png";
+  img.src = "images/crater3.png";
 }
 function changed20() {
   var img = document.getElementById("crater");
-  img.src = "/images/crater.png";
+  img.src = "images/crater.png";
 }
 
 function addTotheCart() {
