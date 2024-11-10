@@ -484,6 +484,9 @@ i {
   gap: 20px;
   justify-content: space-between;
 }
+#cartItems {
+  list-style: none;
+}
 .buy-now-button {
   display: block;
   margin: 20px auto;
@@ -809,7 +812,8 @@ i {
     top: 418px;
     right: 546px;
   }
-  #productName {
+  
+  #productName,#productName1,#ProductName2,#productName3{
     position: relative;
     top: 436px;
     right: 545px;
@@ -1078,7 +1082,7 @@ i {
     top: 418px;
     right: 495px;
   }
-  #productName {
+  #productName,#productName1,#ProductName2,#productName3 {
     position: relative;
     top: 436px;
     right: 495px;
